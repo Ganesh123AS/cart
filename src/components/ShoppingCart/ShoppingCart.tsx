@@ -1,8 +1,9 @@
 "use client";
-import { useShoppingCart } from "@/context/ShoppingCartContxt";
-import { rupeesFormat } from "@/utils/formatRupees";
-import { productList } from "@/data/data";
-import CartItem from "@/components/CartItem/CartItem";
+
+import { useShoppingCart } from '@/context/ShoppingCartContext';
+import { productList } from '@/data/data';
+import { rupeesFormat } from '@/utils/formatRupees';
+
 
 type CartItemProps = {
   id: number;

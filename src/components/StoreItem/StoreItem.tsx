@@ -1,6 +1,7 @@
 "use client";
-import { useShoppingCart } from "@/context/ShoppingCartContxt";
-import { rupeesFormat } from "@/utils/formatRupees";
+
+import { useShoppingCart } from '@/context/ShoppingCartContext';
+import { rupeesFormat } from '@/utils/formatRupees';
 import Image from 'next/image';
 
 type StoreItemProps = {

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ShoppingCartProvider } from "@/context/ShoppingCartContext"
+import Navbar from '@/components/Navbar/Navbar';
 
 const inter = Inter({ subsets: ["latin"] });
 

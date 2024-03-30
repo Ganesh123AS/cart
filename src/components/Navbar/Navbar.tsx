@@ -1,6 +1,6 @@
 "use client";
 import cart from "@/assets/cart.svg";
-import { useShoppingCart } from "@/context/ShoppingCartContxt";
+import { useShoppingCart } from '@/context/ShoppingCartContext';
 import Image from "next/image";
 
 const Navbar: React.FC = () => {

@@ -1,10 +1,10 @@
 "use client";
-import StoreItem from '@/components/StoreItem/StoreItem';
-import { productList } from "@/data/data";
 import prev from "@/assets/prev.svg";
 import next from "@/assets/next.svg";
 import React, { useState } from "react";
 import Image from 'next/image';
+import { productList } from '@/data/data';
+import StoreItem from '@/components/StoreItem/StoreItem';
 
 const Store: React.FC = () => {
   const [curr, setCurr] = useState<number>(0);

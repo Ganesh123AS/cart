@@ -1,5 +1,6 @@
 "use client";
-import Store from '@/pages/store/store';
+
+import Store from '@/pages/store';
 
 const Home: React.FC = () => {
   return (

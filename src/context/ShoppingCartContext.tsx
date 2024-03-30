@@ -1,4 +1,5 @@
 "use client";
+
 import ShoppingCart from '@/components/ShoppingCart/ShoppingCart';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
 import React, { ReactNode, createContext, useContext, useState } from "react";
