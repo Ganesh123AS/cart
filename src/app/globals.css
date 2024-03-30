@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: none;
+  height: revert-layer;
+}
+body {
+  margin: 6rem;
+  background-image: linear-gradient(to right, #08091e, #0b0e42);
+}
