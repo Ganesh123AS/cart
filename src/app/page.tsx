@@ -1,7 +1,12 @@
-export default function Home() {
+"use client";
+import Store from '@/pages/store/store';
+
+const Home: React.FC = () => {
   return (
     <main className="">
-      <h1>Project</h1>
+      <Store  />
     </main>
   );
 }
+
+export default Home;
