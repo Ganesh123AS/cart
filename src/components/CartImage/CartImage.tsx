@@ -9,14 +9,27 @@ import StoreItem from '@/components/StoreItem/StoreItem';
 const CartImage: React.FC = () => {
   const [curr, setCurr] = useState<number>(0);
 
+  // const prevSlide = () => {
+  //   setCurr(prev => (prev === 0 ? productList.length - 1 : prev - 1));
+  // };
+
+  // const nextSlide = () => {
+  //   setCurr(next => (next === productList.length - 1 ? 0 : next + 1));
+  // };
   const prevSlide = () => {
-    setCurr(prev => (prev === 0 ? productList.length - 1 : prev - 1));
+    if (curr === 0) {
+      return;
+    }
+    setCurr(prev => prev - 1);
   };
-
+  
   const nextSlide = () => {
-    setCurr(next => (next === productList.length - 1 ? 0 : next + 1));
+    if (curr === productList.length - 1) {
+      return;
+    }
+    setCurr(prev => prev + 1);
   };
-
+  
   return (
     <div className="relative overflow-hidden">
       <div className="flex transition ease-out duration-30" style={{ transform: `translateX(-${curr * 50}%)` }}>
@@ -28,10 +41,10 @@ const CartImage: React.FC = () => {
       </div>
       <div className="absolute top-40 w-full flex justify-between items-center text-white px-2">
         <p onClick={prevSlide}>
-          <Image src={prev} alt="prev-image" width={30} height={20} />
+          <Image src={prev} alt="prev-image" width={40} height={20} className='cursor-pointer' />
         </p>
         <p onClick={nextSlide}>
-          <Image src={next} alt="next-image" width={30} height={20} />
+          <Image src={next} alt="next-image" width={40} height={20} className='cursor-pointer' />
         </p>
       </div>
     </div>
