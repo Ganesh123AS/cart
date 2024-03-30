@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        imageBg: "#636395",
         btnBlue: "rgb(13 25 45)",
         btnBlueHover: "rgb(13 25 45)",
         lightGreen: 'rgb(37 40 103)',
