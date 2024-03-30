@@ -15,7 +15,7 @@
 - User can add cart remove cart show cart is basket
 - Use of Local storage to store items in cart
 
-# node >=16 required
+# node >=18 required
 
 
 ## Getting Started
