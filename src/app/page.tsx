@@ -1,11 +1,10 @@
 "use client";
-
-import Store from '@/pages/store';
+import CartImage from '@/components/CartImage/CartImage';
 
 const Home: React.FC = () => {
   return (
     <main className="">
-      <Store  />
+      <CartImage  />
     </main>
   );
 }

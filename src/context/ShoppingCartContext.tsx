@@ -2,7 +2,7 @@
 
 import ShoppingCart from '@/components/ShoppingCart/ShoppingCart';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
-import React, { ReactNode, createContext, useContext, useState } from "react";
+import { ReactNode, createContext, useContext, useState } from "react";
 
 type ShoppingCartProviderProps = {
   children: ReactNode;

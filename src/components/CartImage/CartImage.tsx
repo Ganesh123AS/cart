@@ -1,12 +1,12 @@
 "use client";
 import prev from "@/assets/prev.svg";
 import next from "@/assets/next.svg";
-import React, { useState } from "react";
+import { useState } from "react";
 import Image from 'next/image';
 import { productList } from '@/data/data';
 import StoreItem from '@/components/StoreItem/StoreItem';
 
-const Store: React.FC = () => {
+const CartImage: React.FC = () => {
   const [curr, setCurr] = useState<number>(0);
 
   const prevSlide = () => {
@@ -19,8 +19,8 @@ const Store: React.FC = () => {
 
   return (
     <div className="relative overflow-hidden">
-      <div className="flex transition ease-out duration-300" style={{ transform: `translateX(-${curr * 50}%)` }}>
-        {productList.map((item, index) => (
+      <div className="flex transition ease-out duration-30" style={{ transform: `translateX(-${curr * 50}%)` }}>
+        {productList.map((item) => (
           <div key={item?.id} className="w-full rounded-lg bg-neutral-300 shadow-2xl">
             <StoreItem {...item} />
           </div>
@@ -38,4 +38,4 @@ const Store: React.FC = () => {
   );
 };
 
-export default Store;
+export default CartImage;

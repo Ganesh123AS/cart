@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   const { openCart, cartQuantity } = useShoppingCart();
   
   return (
-    <div className="flex justify-between p-5 bg-lightGreen sticky">
+    <div className="flex justify-between p-5 bg-lightGreen sticky rounded-lg">
       <h3 className='text-white'>E-store</h3>
       <div className="flex relative border-2 p-2 rounded-full" onClick={openCart}>
         <Image src={cart} alt="cart-image" width={22} height={22} />

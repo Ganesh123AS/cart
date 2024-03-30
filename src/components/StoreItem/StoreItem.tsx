@@ -28,43 +28,20 @@ const StoreItem: React.FC<StoreItemProps> = ({ id, name, price, img }) => {
         src={img}
         alt="product-image"
         width={"400px"}
-        height={"180px"}
+        height={"280px"}
         className="object-contain"
       />
-      <div className="flex justify-center absolute bottom-0">
-      <span>{name}</span>
+      <div className="flex flex-col px-5">
+     <div className='flex justify-between'>
+     <span>{name}</span>
         <span>{rupeesFormat(price)}</span>
-        <button onClick={() => increaseCartQuantity(id)} className="border border-yellow-600 border-6 rounded-full bg-blue-500 text-white px-4 py-2">
+     </div>
+     <div className='flex justify-center'>
+
+        <button onClick={() => increaseCartQuantity(id)} className="bg-btnBlue hover:bg-blue-950 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
           Add To Cart
         </button>
-        {/* <div className="mt-auto">
-          {quantity === 0 ? (
-            <button  className="border border-yellow-600 border-6 rounded-full bg-blue-500 text-white px-4 py-2" onClick={() => increaseCartQuantity(id)}>
-              + Add To Cart
-            </button>
-          ) : (
-            <div
-              className="d-flex align-items-center flex-column"
-              style={{ gap: ".5rem" }}
-            >
-              <div
-                className="d-flex align-items-center justify-content-center"
-                style={{ gap: ".5rem" }}
-              >
-                <button onClick={() => decreaseCartQuantity(id)}>-</button>
-                <div>
-                  <span className="fs-3">{quantity}</span> in cart
-                </div>
-                <button onClick={() => increaseCartQuantity(id)}>+</button>
-              </div>
-              <button
-                onClick={() => removeFromCart(id)}
-              >
-                Remove
-              </button>
-            </div>
-          )}
-        </div> */}
+     </div>
       </div>
     </div>
   );
