@@ -1,4 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# to run the file
+ - copy the git repository
+ - clone the repository
+ - npm run dev
+ - file will run
+ - port will be 3000 deafult
+# latest deployment or changes will be in develop branch & main is the stable version
+
+# Tech Used
+- tailwind css, typescript, next 14
+- no any external library
+- 
+# Action
+- images with add to cart functionality
+- User can add cart remove cart show cart is basket
+- Use of Local storage to store items in cart
+
+# node >=16 required
+
 
 ## Getting Started
 
